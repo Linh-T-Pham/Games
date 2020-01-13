@@ -1,12 +1,15 @@
+# Tic Tac Toe Game 
+
 def make_move(board):
     """Asks a player for a move and adds the move to the board."""
 
-    pass
-
     # asks user for their player #
-
+    print("Are you player 1 or player 2?")
+    player = int(input(">"))
 
     # asks user for a row
+    print("What row do you want to place your mark at?")
+    move_row = 
 
 
     # asks user for a column
