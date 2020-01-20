@@ -1,5 +1,7 @@
 # Tic Tac Toe Game 
 
+# git push linhP  master
+
 def make_move(board):
     """Asks a player for a move and adds the move to the board."""
 
@@ -9,10 +11,11 @@ def make_move(board):
 
     # asks user for a row
     print("What row do you want to place your mark at?")
-    move_row = 
+    move_row = int(input(">")) - 1
 
 
     # asks user for a column
+    move_col = int(input(">")) - 1
 
 
     # check if board at row and column has been taken, else put x or o there depending on player
@@ -53,3 +56,6 @@ def play(board):
 #################################################################################
 tic_tac_toe_board = [["-","-","-"],["-","-","-"],["-","-","-"]]
 play(tic_tac_toe_board)
+
+
+
