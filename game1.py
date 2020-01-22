@@ -19,6 +19,17 @@ def make_move(board):
 
 
     # check if board at row and column has been taken, else put x or o there depending on player
+    if board[move_row][move_col] != "-":
+        print("That move has already been taken.")
+
+    elif player == 1:
+        board[move_row][move_col] = "x"
+        print("You have chosen to position an x at ({},{})".format(move_row, move_col))
+
+    else:
+        board[move_row][move_col] = "o"
+        print("You have chosen to position an o at ({},{})".format(move_row, move_col))
+
 
 
 def print_board(board):
