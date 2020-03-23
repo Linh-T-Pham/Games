@@ -1,6 +1,7 @@
 import random
 import sys
 
+# git push linhP master 
 
 # If set to true, print board without so much spacing
 # On bigger screens, you can set this to False
