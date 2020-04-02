@@ -30,3 +30,35 @@
         # 4. started_at: when the game started 
         # 5. finished_at: When the game ended 
 
+
+# Leetcode # 794
+
+"""
+>>> board(["0", "  ", "  "])
+false
+>>> board(["XOX", " X ", "  "])
+false
+>>> board(["XXX", "  ", "OOO"])
+false 
+>>> board(["XOX", "O O", "XOX"])
+true 
+"""
+
+
+def validTictacToe (self, board): 
+
+    for i in range(len(board)):
+        if board[i][0] == board[i][1] == board[i][2] == player:
+            return True 
+
+    else:
+        return False 
+
+
+
+
+
+if __name__ == '__main__':
+    import doctest
+    if doctest.testmod().failed == 0:
+        print("\n*** AWESOME!. GO GO GO!\n")
