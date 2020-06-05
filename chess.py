@@ -202,30 +202,30 @@ def kingList(x,y):
 
 
 
-class Knight(Piece):
-    def availableMoves(self,x,y,gameboard, Color = None):
-        if Color is None : Color = self.Color
-        return [(xx,yy) for xx,yy in knightList(x,y,2,1) if self.noConflict(gameboard, Color, xx, yy)]
+# class Knight(Piece):
+#     def availableMoves(self,x,y,gameboard, Color = None):
+#         if Color is None : Color = self.Color
+#         return [(xx,yy) for xx,yy in knightList(x,y,2,1) if self.noConflict(gameboard, Color, xx, yy)]
         
-class Rook(Piece):
-    def availableMoves(self,x,y,gameboard ,Color = None):
-        if Color is None : Color = self.Color
-        return self.AdNauseum(x, y, gameboard, Color, chessCardinals)
+# class Rook(Piece):
+#     def availableMoves(self,x,y,gameboard ,Color = None):
+#         if Color is None : Color = self.Color
+#         return self.AdNauseum(x, y, gameboard, Color, chessCardinals)
         
-class Bishop(Piece):
-    def availableMoves(self,x,y,gameboard, Color = None):
-        if Color is None : Color = self.Color
-        return self.AdNauseum(x, y, gameboard, Color, chessDiagonals)
+# class Bishop(Piece):
+#     def availableMoves(self,x,y,gameboard, Color = None):
+#         if Color is None : Color = self.Color
+#         return self.AdNauseum(x, y, gameboard, Color, chessDiagonals)
         
-class Queen(Piece):
-    def availableMoves(self,x,y,gameboard, Color = None):
-        if Color is None : Color = self.Color
-        return self.AdNauseum(x, y, gameboard, Color, chessCardinals+chessDiagonals)
+# class Queen(Piece):
+#     def availableMoves(self,x,y,gameboard, Color = None):
+#         if Color is None : Color = self.Color
+#         return self.AdNauseum(x, y, gameboard, Color, chessCardinals+chessDiagonals)
         
-class King(Piece):
-    def availableMoves(self,x,y,gameboard, Color = None):
-        if Color is None : Color = self.Color
-        return [(xx,yy) for xx,yy in kingList(x,y) if self.noConflict(gameboard, Color, xx, yy)]
+# class King(Piece):
+#     def availableMoves(self,x,y,gameboard, Color = None):
+#         if Color is None : Color = self.Color
+#         return [(xx,yy) for xx,yy in kingList(x,y) if self.noConflict(gameboard, Color, xx, yy)]
         
 class Pawn(Piece):
     def __init__(self,color,name,direction):
